@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load pagination_tags %}
+{% block page_title %}
+    分页功能
+{% endblock %}
+
+{% block main %}
+    {% autopaginate films 10 %}
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>电影名称</th>
+        </tr>
+
+        {% for film in films %}
+            <tr>
+                <td>{{ film.id }}</td>
+                <td>{{ film.name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% paginate %}
+{% endblock %}

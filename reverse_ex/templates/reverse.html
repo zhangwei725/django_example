@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反向解析</title>
+</head>
+<body>
+
+<form action="" method="get">
+
+</form>
+<h2>普通使用</h2>
+<a href="/reverse/base/">普通链接</a><br>
+<a href="{% url 'reverse:base' %}">反向解析基础使用</a><br>
+<h2>使用命名空间</h2>
+<a href="/reverse/base/">命名空间普通链接</a><br>
+<a href="{% url 'reverse:space' %}">反向解析使用命名空间</a><br>
+<h2>带参数的反向解析</h2>
+<a href="{% url 'reverse:params' 1 10 %}">反向解析带参数</a><br>
+</body>
+</html>
