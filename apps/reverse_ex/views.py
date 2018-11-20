@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse
 
-from pagination import views
+from apps.pagination import views
 
 logger = logging.getLogger(__name__)
 

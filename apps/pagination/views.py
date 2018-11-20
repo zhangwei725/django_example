@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from pagination.models import Film
+from apps.pagination.models import Film
 
 
 def pg_list(request):

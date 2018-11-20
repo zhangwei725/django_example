@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from reverse_ex import views
+from apps.reverse_ex import views
 
 urlpatterns = [
     url('index/', views.reverse_index),
